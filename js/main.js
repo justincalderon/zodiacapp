@@ -77,9 +77,10 @@ function horoscope() {
       document.getElementById("yourSign").textContent = userdata.value
       // get element with id="icon" and change source attribute to the current zodiac image path
       document.getElementById("icon").src = zodiac[i].image
+      // get element with id="yourHoroscope" and change the content to this concatenated string
+      document.getElementById("yourHoroscope").textContent = "Your best attributes are - " + zodiac[i].fortune
 
-
-
+      // stop function because we found a match and added the data to the screen.
       return
     }
   }
